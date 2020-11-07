@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "backups",
+  "info": {
+    "name": "Backup",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "repo": {
+      "type": "string",
+      "required": true
+    },
+    "borg": {
+      "type": "string",
+      "private": false,
+      "required": true
+    },
+    "script": {
+      "type": "string",
+      "required": true
+    },
+    "stats": {
+      "type": "text"
+    },
+    "finished_at": {
+      "type": "datetime"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "started",
+        "finished",
+        "failed"
+      ],
+      "default": "started",
+      "required": true
+    }
+  }
+}
