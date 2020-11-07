@@ -1,8 +1,12 @@
 {
-  "name": "backend",
+  "name": "borg-monitor-backend",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "1.0.0",
+  "author": "Frédéric Bolvin <fred@f-bit.software> (https://bol.vin)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Fensterbank/borg-monitor.git"
+  },
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
@@ -24,9 +28,6 @@
     "strapi-plugin-upload": "3.2.5",
     "strapi-plugin-users-permissions": "3.2.5",
     "strapi-utils": "3.2.5"
-  },
-  "author": {
-    "name": "A Strapi developer"
   },
   "strapi": {
     "uuid": "9df12754-a6aa-443f-a995-0ba8cc4c9470"
