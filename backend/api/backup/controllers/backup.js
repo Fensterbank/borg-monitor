@@ -34,9 +34,9 @@ module.exports = {
     });
 
     let entity = await strapi.services.backup.update({ id }, { 
-      stats: statsLines.join('\n'),
+      stats: statsLines.length > 0 ? statsLines.join('\n') : lines.join('\n'),
       finished_at: new Date(),
-      status: data.status ? data.status : 'finished',
+      status: statsLines.length > 0 ? 'finished' : 'failed',
     });
     return entity.id;
   },
