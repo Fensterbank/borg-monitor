@@ -1,10 +1,9 @@
+import { config } from '@@/config/config';
+import { useAuth } from '@@/context/AuthContext';
 import fetch from 'isomorphic-unfetch';
 import { stringify } from 'query-string';
 import { useMemo } from 'react';
 import urljoin from 'url-join';
-
-import { config } from '@@/config/config';
-import { useAuth } from '@@/context/AuthContext';
 
 import { ApiResult } from './types';
 
