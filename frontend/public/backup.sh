@@ -1,7 +1,7 @@
 #!/bin/bash
 SCRIPT="backup.sh 1.1.0"
 VARIABLES="variables.txt"
-HOST="https://backup.f-bit.software"
+HOST="https://backup-api.f-bit.software"
 
 BORG=$(awk -F= '$1=="BORG"{print $2;exit}' $VARIABLES) 
 REPO=$(awk -F= '$1=="REPO"{print $2;exit}' $VARIABLES)
