@@ -1,0 +1,1 @@
+wsl.exe -u root /root/borg/backup.sh

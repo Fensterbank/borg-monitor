@@ -1,0 +1,5 @@
+R /var/www
+R /var/lib/mysql
+R /var/node-apps
+R /etc
+R /home

@@ -1,0 +1,4 @@
+BORG=/usr/bin/borg
+REPO=repo-name
+BORG_PATH=/tmp
+REPO_PATH=abcdefghij1234567.repo.borgbase.com:repo
