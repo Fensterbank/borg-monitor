@@ -1,3 +1,6 @@
+import { User } from '@@/lib/api/types';
+import { apiRoutes, createApiRoute } from '@@lib/api/api';
+import { ROUTES } from '@@lib/routes';
 import { addHours } from 'date-fns';
 import cookie from 'js-cookie';
 import Router, { useRouter } from 'next/router';
@@ -10,10 +13,6 @@ import {
   FC,
 } from 'react';
 import { useQuery, queryCache } from 'react-query';
-
-import { apiRoutes, createApiRoute } from '@@lib/api/api';
-import { ROUTES } from '@@lib/routes';
-import { User } from '@@/lib/api/types';
 
 const ACCESS_TOKEN_COOKIE_NAME = 'accessToken';
 const LOGOUT_TIMESTAMP_KEY = 'logout';
@@ -142,7 +141,6 @@ type UseUserOptions = {
 };
 
 export const useUser = ({ redirectTo }: UseUserOptions = {}) => {
-  console.log('useUser', redirectTo);
   const { user, isFetching } = useAuth();
   const router = useRouter();
 
