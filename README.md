@@ -1,8 +1,10 @@
 # BORG MONITOR
 
 Borg monitor is a web application listing a history of [BorgBackup](https://www.borgbackup.org/) runs.  
-Frontend is powered by Next.js, React, react-query and Tailwind CSS.
-Backend is powered by Strapi.  
+Frontend is powered by [Next.js](https://nextjs.org/r), [React](https://reactjs.org/), [react-query](https://react-query.tanstack.com/) and [Tailwind CSS](https://tailwindcss.com/).
+Backend is powered by [Strapi](https://strapi.io/).  
+
+![Screenshot](./sample.png)
 
 ## How it works
 
@@ -18,6 +20,9 @@ The metadata of each run is saved in the backend and listed by the frontend.
 The script is not yet Open Source. Technically every machine has its own script version with other variables and so on.  
 Long-term target would be to have an auto-update functionality and it would be nice, if the script for each machine could be created by **Borg Monitor** itself.  
 For now, this is a hand-crafted personal solution for my backup scripts.
+
+## LICENSE
+MIT
 
 ## Author
 
