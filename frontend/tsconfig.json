@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "paths": {
+      "@@/*": ["./src/*"],
+      "@@components/*": ["./src/components/*"],
+      "@@pages/*": ["./src/pages/*"],
+      "@@utils/*": ["./src/utils/*"],
+      "@@lib/*": ["./src/lib/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next.config.js",
+    "tailwind.config.js",
+    ".eslintrc.js",
+    "postcss.config.js"
+  ]
+}
